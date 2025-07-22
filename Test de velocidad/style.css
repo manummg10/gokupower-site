@@ -1,0 +1,76 @@
+body {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 400px 300px;
+  margin: 1rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+#startBtn {
+  background: orange;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#startBtn:hover,
+#startBtn:focus {
+  background: rgb(247, 255, 11);
+  outline: none;
+}
+
+#gokuImage {
+  max-width: 300px;
+  width: 80vw; /* ancho flexible */
+  max-height: 350px;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+  height: auto;
+}
+
+#gokuLevelText {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 480px) {
+  #startBtn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  #gokuImage {
+    max-width: 1500px;
+    width: 600vw;
+    justify-content: center;
+  }
+
+  #gokuLevelText {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  #startBtn {
+    padding: 18px 40px;
+    font-size: 20px;
+  }
+
+  #gokuImage {
+    max-width: 250px;
+    width: 350px;
+  }
+
+  #gokuLevelText {
+    font-size: 28px;
+  }
+}
